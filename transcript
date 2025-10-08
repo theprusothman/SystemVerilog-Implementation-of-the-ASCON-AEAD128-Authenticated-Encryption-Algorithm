@@ -1,0 +1,64 @@
+# //  ModelSim SE-64 2020.4 Oct 13 2020 Linux 3.10.0-1160.119.1.el7.x86_64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -L LIB_RTL LIB_BENCH.ascon_top_tb 
+# Start time: 16:48:41 on May 10,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "FSM_Moore(fast)".
+# Loading sv_std.std
+# Loading LIB_RTL.ascon_pack(fast)
+# Loading work.ascon_top_tb(fast)
+# Loading LIB_RTL.ascon_top_sv_unit(fast)
+# Loading LIB_RTL.ascon_top(fast)
+# Loading LIB_RTL.FSM_Moore_sv_unit(fast)
+# Loading LIB_RTL.FSM_Moore(fast)
+# Loading LIB_RTL.Compteur_Double_Init_sv_unit(fast)
+# Loading LIB_RTL.Compteur_Double_Init(fast)
+# Loading LIB_RTL.Permutation_XOR_Final_1_sv_unit(fast)
+# Loading LIB_RTL.Permutation_XOR_Final_1(fast)
+# Loading LIB_RTL.State_Mux_sv_unit(fast)
+# Loading LIB_RTL.State_Mux(fast)
+# Loading LIB_RTL.Xor_Begin_sv_unit(fast)
+# Loading LIB_RTL.Xor_Begin(fast)
+# Loading LIB_RTL.Cipher_Register_sv_unit(fast)
+# Loading LIB_RTL.Cipher_Register(fast)
+# Loading LIB_RTL.Pc_sv_unit(fast)
+# Loading LIB_RTL.Pc(fast)
+# Loading LIB_RTL.Ps_sv_unit(fast)
+# Loading LIB_RTL.Ps(fast)
+# Loading LIB_RTL.Sbox_sv_unit(fast)
+# Loading LIB_RTL.Sbox(fast)
+# Loading LIB_RTL.Pl_sv_unit(fast)
+# Loading LIB_RTL.Pl(fast)
+# Loading LIB_RTL.Xor_End_sv_unit(fast)
+# Loading LIB_RTL.Xor_End(fast)
+# Loading LIB_RTL.Tag_Register_sv_unit(fast)
+# Loading LIB_RTL.Tag_Register(fast)
+# Loading LIB_RTL.State_Register_sv_unit(fast)
+# Loading LIB_RTL.State_Register(fast)
+add wave -position end sim:/ascon_top_tb/*
+run
+# ==> Reset du circuit
+# ==> Début du chiffrement
+# ==> Fin de la phase d'initialisation
+# ==> Fin de la phase de données associées
+# ==> Fin de la phase de traitement bloc 1
+# ==> Fin de la phase de traitement bloc 2
+# ==> Fin du chiffrement
+# ==> Cipher  = 7a42b995a03c96c3611bbd350f39ff3a
+# ==> Tag     = 00000000000000000000000000000000
+# ** Note: $stop    : SRC/BENCH/ascon_top_tb.sv(118)
+#    Time: 1350 ns  Iteration: 0  Instance: /ascon_top_tb
+# Break in Module ascon_top_tb at SRC/BENCH/ascon_top_tb.sv line 118
+# End time: 16:50:37 on May 10,2025, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 0
